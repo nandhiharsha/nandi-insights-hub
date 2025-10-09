@@ -4,29 +4,29 @@ import { Card } from "@/components/ui/card";
 const About = () => {
   const education = [
     {
-        degree: "MSc in Data Science & Analytics",
-  institution: "University of Hertfordshire",
-  duration: "Sep-2023 to Sep-2025",
-  gpa: "3.76 GPA",
-  icon: GraduationCap,
-  details: [
-    "Specialization in Machine Learning and Big Data Analytics",
-    "Thesis: Dimensionality Reduction for News Classification using Random Projection",
-    "Technical Stack: Python, R, SQL, Tableau, Scikit-learn, TensorFlow",
-    "Relevant Courses: Neural Networks, Data Mining, Statistical Modeling, Applied Data Science"
-  ]
-},
+      degree: "MSc in Data Science & Analytics",
+      institution: "University of Hertfordshire",
+      duration: "Sep 2023 to Sep 2025",
+      gpa: "3.76 GPA",
+      icon: GraduationCap,
+      details: [
+        "Specialization in Machine Learning and Big Data Analytics",
+        "Thesis: Dimensionality Reduction for News Classification using Random Projection",
+        "Technical Stack: Python, R, SQL, Tableau, Scikit-learn, TensorFlow",
+        "Relevant Courses: Neural Networks, Data Mining, Statistical Modeling, Applied Data Science"
+      ]
+    },
     {
-  degree: "BTech in Computer Science Engineering",
-  institution: "Siddharth Institute of Engineering and Technology",
-  duration: "2017 - 2021", 
-  result: "6.7/10",
-  icon: GraduationCap,
-  details: [
-    "Final Year Project: IoT-based Gas Leakage Detection using ThingSpeak",
-    "Core Computer Science Fundamentals with Practical Applications"
-  ]
-},
+      degree: "BTech in Computer Science Engineering",
+      institution: "Siddharth Institute of Engineering and Technology", 
+      duration: "2017 - 2021",
+      result: "6.7/10",
+      icon: GraduationCap,
+      details: [
+        "Final Year Project: IoT-based Gas Leakage Detection using ThingSpeak",
+        "Core Computer Science Fundamentals with Practical Applications"
+      ]
+    },
   ];
 
   return (
@@ -82,8 +82,18 @@ const About = () => {
                   <div className="p-3 rounded-xl gradient-bg">
                     <edu.icon className="w-6 h-6 text-white" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h4 className="text-lg font-semibold">{edu.degree}</h4>
+                    <p className="text-muted-foreground font-medium">{edu.institution}</p>
+                    <p className="text-sm text-muted-foreground">{edu.duration} • {edu.gpa || edu.result}</p>
+                    <ul className="mt-3 space-y-1">
+                      {edu.details.map((detail, detailIndex) => (
+                        <li key={detailIndex} className="text-sm text-foreground/80 flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          <span>{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </Card>
