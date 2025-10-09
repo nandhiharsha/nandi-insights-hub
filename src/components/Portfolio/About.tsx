@@ -4,13 +4,29 @@ import { Card } from "@/components/ui/card";
 const About = () => {
   const education = [
     {
-      degree: "MSc in Data Science & Analytics",
-      icon: GraduationCap,
-    },
+        degree: "MSc in Data Science & Analytics",
+  institution: "University of Hertfordshire",
+  duration: "Sep-2023 to Sep-2025",
+  gpa: "3.76 GPA",
+  icon: GraduationCap,
+  details: [
+    "Specialization in Machine Learning and Big Data Analytics",
+    "Thesis: Dimensionality Reduction for News Classification using Random Projection",
+    "Technical Stack: Python, R, SQL, Tableau, Scikit-learn, TensorFlow",
+    "Relevant Courses: Neural Networks, Data Mining, Statistical Modeling, Applied Data Science"
+  ]
+},
     {
-      degree: "BTech in Computer Science Engineering",
-      icon: GraduationCap,
-    },
+  degree: "BTech in Computer Science Engineering",
+  institution: "Siddharth Institute of Engineering and Technology",
+  duration: "2017 - 2021", 
+  result: "6.7/10",
+  icon: GraduationCap,
+  details: [
+    "Final Year Project: IoT-based Gas Leakage Detection using ThingSpeak",
+    "Core Computer Science Fundamentals with Practical Applications"
+  ]
+},
   ];
 
   return (
@@ -34,9 +50,10 @@ const About = () => {
                 Professional Journey
               </h3>
               <p className="text-foreground/80 leading-relaxed">
-                Multi-disciplinary Data Analyst and Automation Engineer with experience spanning 
-                software quality assurance and data science. Skilled in Python, SQL, R and advanced 
-                analytics for extracting actionable insights from complex datasets.
+                At Amdocs, I engineered a comprehensive test automation ecosystem that fundamentally transformed our quality
+                assurance processes. By architecting Selenium-based automation frameworks using TestNG and JUnit, I replaced
+                manual testing workflows with intelligent, reusable scripts that achieved a 40% reduction in regression 
+                testing time while maintaining robust test coverage.
               </p>
               <p className="text-foreground/80 leading-relaxed mt-4">
                 Demonstrated history of building and maintaining automation frameworks using Selenium 
@@ -45,8 +62,10 @@ const About = () => {
                 efficient automated test scenarios.
               </p>
               <p className="text-foreground/80 leading-relaxed mt-4">
-                Proven ability to work in Agile teams, mentor colleagues, and communicate results to 
-                technical and non-technical stakeholders with a focus on delivering measurable business value.
+                My approach to quality extended beyond surface-level testing to comprehensive data integrity verification.
+                Utilizing SQL queries and Unix/Linux commands, I conducted rigorous back-end testing across Amdocs CRM, CSM,
+                and TDAS systems. This data-centric validation ensured consistency across all back-end systems before QA
+                handoff, preventing data-related defects from reaching production environments.
               </p>
             </Card>
           </div>
