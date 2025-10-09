@@ -24,7 +24,7 @@ const Projects = () => {
         "Processed 200K+ news articles",
       ],
       type: "Academic Research",
-      githubUrl: "", // Add your GitHub repository URL here
+      githubUrl: "https://github.com/nandhiharsha/Project_NewscategoryClassification", // Add your GitHub repository URL here
       docsUrl: "", // Add your documentation/paper URL here
     },
     {
