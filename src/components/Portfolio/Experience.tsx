@@ -115,6 +115,8 @@ const Experience = () => {
                 "iTrack",
                 "Amdocs CRM",
                 "REST-Assured",
+                "Postman",
+                "Ginger",
               ].map((tech) => (
                 <Badge key={tech} variant="outline">
                   {tech}
