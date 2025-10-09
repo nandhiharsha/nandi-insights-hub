@@ -27,14 +27,14 @@ const Hero = () => {
                 Harshavardhan <span className="gradient-text">Nandi</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">
-                Data Analyst & Automation Engineer
+                Master in Data Science and Analytics (Msc)
               </h2>
             </div>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Multi-disciplinary professional blending data science with quality assurance automation. 
-              I transform complex datasets into actionable insights while building robust automation 
-              frameworks that drive efficiency and reliability.
+              I take raw, unprocessed data and turn it into gourmet business insights. My special recipe: a dash of Python,
+              a sprinkle of SQL, a generous portion of statistical analysis, and a secret sauce of curiosity. Served with 
+              fresh-baked Tableau dashboards and a side of machine learning garnish.
             </p>
 
             <div className="flex flex-wrap gap-2">
