@@ -24,6 +24,8 @@ const Projects = () => {
         "Processed 200K+ news articles",
       ],
       type: "Academic Research",
+      githubUrl: "", // Add your GitHub repository URL here
+      docsUrl: "", // Add your documentation/paper URL here
     },
     {
       title: "AutomateIT API Validation Framework",
@@ -43,6 +45,8 @@ const Projects = () => {
         "90% automation coverage",
       ],
       type: "Industry Framework",
+      githubUrl: "", // Add your GitHub repository URL here
+      docsUrl: "", // Add your documentation URL here
     },
   ];
 
@@ -110,13 +114,37 @@ const Projects = () => {
 
               {/* Action Buttons */}
               <div className="flex gap-3 pt-4 border-t border-border">
-                <Button variant="outline" size="sm" className="flex-1">
-                  <Github className="w-4 h-4 mr-2" />
-                  View Details
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex-1"
+                  asChild
+                  disabled={!project.githubUrl}
+                >
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    View Details
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm" className="flex-1">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Documentation
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex-1"
+                  asChild
+                  disabled={!project.docsUrl}
+                >
+                  <a
+                    href={project.docsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Documentation
+                  </a>
                 </Button>
               </div>
             </Card>
